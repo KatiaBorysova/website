@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav .menu');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Single Page Website</title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700,800" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+  <div class="header-top">
+<div class="carcass">
+      <a href="#" class="main-logo"><img src="images/logo.png"></a>
+       <div class="login">
+     <a href="#"><img src="images/login.jpg"> Login</a>
+        </div>
+      <nav>
+         <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>  
+       <a href="#" id="pull"><img src="images/icon-menu.png"></a>
+  </nav>
+   </div> 
+ </div> 
+       <div class="text-img">
+        <h1>WELCOME TO PINK</h1>
+        <p>A multi purpose theme from cssauthor.com</p>
+       </div>
+     
+ 
+  </header>
+  
+<main>
+   <div class="features carcass">
+   	  <h1>Lorem Ipsum is simply dummy </h1>
+   	  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown</p>
+   	 <div class="features-img">
+   	    <a href="#"><img src="images/section-img1.jpg"></a>
+   	    <a href="#"><img src="images/section-img2.jpg"></a>
+   	    <a href="#"><img src="images/section-img3.jpg"></a>
+   	    <a href="#"><img src="images/section-img4.jpg"></a>
+   	 </div>
+   </div>
+   
+   <div class="articles carcass">
+       <article>
+             <img src="images/article-img.jpg">
+         <div class="content">
+           <h2><a href="#">Lorem Ipsum is simply</a></h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         </div>
+       </article>
+       <article>
+              <img src="images/article-img.jpg">
+          <div class="content">
+           <h2><a href="#">Lorem Ipsum is simply</a></h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+        </div>
+       </article>
+       <article>
+              <img src="images/article-img.jpg">
+         <div class="content">
+           <h2><a href="#">Lorem Ipsum is simply</a></h2>
+           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+         </div>
+       </article>
+   </div>
+   
+ <ul class="pager carcass">
+   <li><a href="#" class="active">1</a></li>
+   <li><a href="#">2</a></li>
+   <li><a href="#">3</a></li>
+   <li><a href="#">4</a></li>
+ </ul>
+   
+</main>
+
+<footer>
+     <div class="carcass">
+     
+ <div class="main-sub-menu">   
+   <div class="sub-menu">
+     <h3>Sub menu</h3>
+     <ul>
+		 <li><a href="#">Android</a></li>
+         <li><a href="#">Apps</a></li>
+         <li><a href="#">Articles</a></li>
+         <li><a href="#">Backgrounds</a></li>
+         <li><a href="#">Blogger</a></li>
+         <li><a href="#">Books</a></li>
+         <li><a href="#">Coding</a></li>
+     </ul>
+   </div> 
+    <div class="sub-menu">
+     <h3>Sub menu</h3>
+     <ul>
+		 <li><a href="#">Freebies</a></li>
+         <li><a href="#">Greetings</a></li>
+         <li><a href="#">Icons</a></li>
+         <li><a href="#">Illustrator</a></li>
+         <li><a href="#">Inspiration</a></li>
+         <li><a href="#">iPad</a></li>
+         <li><a href="#">iPhone</a></li>
+     </ul>
+     </div>
+  <div class="sub-menu">
+     <h3>Sub menu</h3>
+     <ul>
+		 <li><a href="#">Drupal</a></li>
+         <li><a href="#">Fonts</a></li>
+         <li><a href="#">Freebies</a></li>
+         <li><a href="#">Backgrounds</a></li>
+         <li><a href="#">Illustrator</a></li>
+         <li><a href="#">Icons</a></li>
+         <li><a href="#">Coding</a></li>
+     </ul>
+     
+   </div>
+ </div>
+
+ <div class="social-copyright">
+    
+     <div class="images">
+	  <a href="#"><img src="images/social-fb.png"></a>
+	  <a href="#"><img src="images/social-tw.png"></a>
+	  <a href="#"><img src="images/social-dr.png"></a>
+	  <a href="#"><img src="images/social-sh.png"></a>
+    </div> 
+  <p class="copy">Copyright &copy; 2017 Cssauthor.com</p>
+      
+</div>
+   
+  </div> 
+</footer>	
+</body>
+</html>
